@@ -22,7 +22,7 @@ function signIn(email, password, callback){
         if (results.length === 0){
             return callback(null, null);
         }
-        const user = new User(results[0].fullname, results[0].email, results[0].password);
+        const user = new User(results[0].name, results[0].email, results[0].password);
     });
 }
 
