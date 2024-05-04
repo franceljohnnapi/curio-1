@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 const dotenv = require('dotenv').config();
 const PORT = process.env.PORT_NAME
 const axios = require('axios');
+const multer  = require('multer');
 
 app.use(express.json());
 app.use(bodyParser.json());
