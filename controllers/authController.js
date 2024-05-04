@@ -14,7 +14,7 @@ const User = require('../models/userModel');
 // }
 
 function signIn(email, password, callback){
-    const sql = 'SELECT * FROM user WHERE emailadd = ? AND password = ?';
+    const sql = 'SELECT * FROM user WHERE email = ? AND password = ?';
     db.query(sql, [email, password], (err, results) => {
         if(err) {
             return callback(err, null);
@@ -35,6 +35,4 @@ function signIn(email, password, callback){
 // }
 
 
-module.exports = {
-    signIn
-};
+module.exports = signIn;
