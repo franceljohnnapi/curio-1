@@ -8,10 +8,10 @@ const PORT = process.env.PORT_NAME
 const axios = require('axios');
 const multer  = require('multer');
 
-const authRoutes = require('./routes/authRoutes');
-
 app.use(express.json());
 app.use(bodyParser.json());
+
+const authRoutes = require('./routes/authRoutes');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(authRoutes);

@@ -1,9 +1,9 @@
-class user {
-    constructor(fullname, emailadd, password){
+class User {
+    constructor(fullname, email, password){
         this.fullname = fullname;
-        this.emailadd = emailadd;
+        this.emailadd = email;
         this.password = password;
    }
 }
 
-module.exports = user;
+module.exports = User;
