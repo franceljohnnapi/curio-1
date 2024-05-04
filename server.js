@@ -5,6 +5,7 @@ const mysql = require('mysql2');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv').config();
 const PORT = process.env.PORT_NAME
+const axios = require('axios');
 
 app.use(express.json());
 app.use(bodyParser.json());

@@ -15,3 +15,5 @@ router.post("http://localhost:3000/", (req, res) => {
     });
 });
 
+
+module.exports = router;
